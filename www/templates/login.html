@@ -1,0 +1,26 @@
+<!--带有左侧菜单的登陆页-->
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-view>
+            <ion-header-bar>
+                <h1 class="title">Login</h1>
+            </ion-header-bar>
+            <ion-content>
+                <div class="list">
+                    <label class="item item-input">
+                        <i class="icon ion-android-person padding-right ss-log-i-30 calm"></i>
+                        <input type="text" ng-model="loginData.username" placeholder="username">
+                    </label>
+                    <label class="item item-input">
+                        <i class="icon ion-ios-locked padding-right ss-log-i-30 calm"></i>
+                        <input type="password" ng-model="loginData.password" placeholder="password">
+                    </label>
+                    <label class="item">
+                        <button class="button button-block button-positive" ng-click="login()">Log in</button>
+                    </label>
+                </div>
+            </ion-content>
+        </ion-view>
+    </ion-side-menu-content>
+
+</ion-side-menus>
